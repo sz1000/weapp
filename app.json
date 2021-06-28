@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/shopingList/shopingList",
+    "pages/shop/shop",
     "pages/listDetails/listDetails",
     "pages/cart/cart",
-    "pages/shop/shop",
+    
     "pages/home/home",
     "pages/shopList/shopList",
     "pages/tosubscribe/tosubscribe",
@@ -11,8 +11,8 @@
     "pages/subscribe/subscribe",
     "pages/explain/explain",
     "pages/about/about",
-    "pages/swiperTab/swiperTab",
-    "pages/shopingDetails/shopingDetails"
+    
+    "pages/swiperTab/swiperTab"
   ],
   "window": {
     "backgroundTextStyle": "light",

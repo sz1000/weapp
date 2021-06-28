@@ -4,6 +4,5 @@
     "tabs": "../../component/tabs/tabs"
   },
   "enablePullDownRefresh": true,
-  "backgroundTextStyle": "dark",
-    "onReachBottomDistance": 50
+  "backgroundTextStyle": "dark"
 }

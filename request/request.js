@@ -62,8 +62,7 @@
 let ajaxTimes = 0;
 class request {
   constructor() {
-    this._baseUrl = 'https://api.it120.cc/tz/shop'
-    // this._baseUrl = 'http://123.56.180.25:8091/api'
+    this._baseUrl = 'http://123.56.180.25:8091/api'
     // this._baseUrl='http://123.56.180.25:8091/api'
     //http://123.56.180.25:8091/api/cmsArticle/front/articleByChannelID?channelID=2&page=0&size=20&sort=id,desc
     //  this._baseUrl = 'https://tybaby.kodin.cn/api/v1';
