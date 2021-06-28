@@ -1,0 +1,56 @@
+.section {
+  display: flex;
+  margin: 30rpx;
+  font-size: 32rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+}
+.center {
+  /* text-align: center; */
+}
+picker {
+  flex: 1;
+}
+
+.label {
+  width: 120rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  margin-right: 30rpx;
+  /* background: #f5f5; */
+}
+
+.input {
+  flex: 1;
+  width: 100%;
+  height: 64rpx;
+  line-height: 64rpx;
+  /* background-color: #ddd; */
+  /* text-align: center; */
+}
+
+.picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  flex: 1;
+}
+
+.btn {
+  display: flex;
+}
+
+.submit {
+  margin-top: 50rpx;
+  width: 180rpx !important;
+  text-align: center;
+  font-size: 28rpx;
+  /* flex: 1; */
+}
+
+.rease {
+  flex: 1;
+}

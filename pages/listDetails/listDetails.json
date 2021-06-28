@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText":"tab选项卡",
+  "usingComponents": {
+    "tabs": "../../component/tabs/tabs"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 50
+}

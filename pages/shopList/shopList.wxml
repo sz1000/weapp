@@ -1,0 +1,21 @@
+<view class="shoplist">
+  <view class="city">
+    <text class="title">常用城市</text>
+    <view class="cityTagList">
+      <text class="tag">上海</text>
+      <text class="tag">北京</text>
+      <text class="tag">更多</text>
+    </view>
+  </view>
+  <view class="store">
+    <text class="title">门店列表</text>
+    <view wx:for="{{storeList}}" class="storeList" bindtap="toSelectStore" data-index="{{index}}" wx:key="*this">
+      <text class="name">{{item.name}}</text>
+      <text class="address">{{item.address}}</text>
+    </view>
+    <view class="more">
+    <text class="readmore">查看更多</text>
+    <image class="img" src="{{url}}" mode="{{aspectFill}}" />
+    </view>
+  </view>
+</view>

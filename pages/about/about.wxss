@@ -1,0 +1,108 @@
+/* pages/about/about.wxss */
+.about {
+height: 100%;
+background: #f5f5f5;
+}
+.top {
+  width: 100%;
+  background: #fff;
+}
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.avatarUrl {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30rpx;
+  width: 100%;
+  line-height: 64rpx;
+  padding: 20rpx 0;
+  font-weight: 700;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+width: 100%;
+line-height: 64rpx;
+  padding: 20rpx 0;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+.enter {
+flex: 1;
+width: 100%;
+font-weight: 900;
+color: chartreuse;
+}
+.line {
+  width: 4rpx;
+  height: 48rpx;
+  line-height: 88rpx;
+  background: #ccc;
+}
+.share{
+flex: 1;
+width: 100%;
+font-weight: 900;
+color: chartreuse;
+}
+.applet {
+  margin: 50rpx 0;
+  width: 100%;
+}
+.thumb {
+  display: flex;
+  justify-content: center;
+  font-size: 28rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  background: #fff;
+  padding: 50rpx 0;
+  font-weight: 700;
+}
+.flag {
+  width: 48rpx;
+  height: 48rpx;
+}
+.dianzan {
+  display: inline-block;
+}
+.foot {
+  background: #fff;
+  padding: 10rpx 0;
+}
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+}
+.readmore {
+  font-size: 28rpx;
+  flex: 1;
+}
+.img {
+  width: 64rpx;
+  height: 64rpx;
+}

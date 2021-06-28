@@ -1,0 +1,24 @@
+<view class="listPage">
+
+  <view class="tabs">
+    <tabs tabs="{{tabs}}" binditemChange="handItemChange">
+      <block>
+        <view wx:for="{{tabs}}" wx:if="{{item.isActive}}" wx:key="id">
+          <view wx:for="{{item.list}}" wx:key="index">
+            {{item.text}}
+          </view>
+        </view>
+      </block>
+      <!-- <block wx:elif="{{tabs[1].isActive}}">1</block>
+    <block wx:elif="{{tabs[2].isActive}}">2</block>
+    <block wx:elif="{{tabs[3].isActive}}">3</block> -->
+    </tabs>
+  </view>
+  <view class="content">
+    <view class="item" wx:for="{{list}}" wx:key="id">
+      <view class="name">{{item.createBy}}</view>
+      <view class="title">{{item.title}}</view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,34 @@
+
+<view class="box">
+  <view class="searchBarBox">
+		<image class="searchIcon" mode="aspectFill" src="../../static/images/Shape@2x.png" />
+		<input class="searchBar" bindinput="getInputValue" placeholder="请输入要查询的商品" value='{{inputValue}}' />
+		<view bindtap="cancelInput"
+			style="width:100rpx;height: 100%;display: flex;justify-content: center;align-items: center;">
+			<image wx:if="{{inputValue.length != 0}}" class="cancelIcon" mode="aspectFill"
+				src="../../static/images/system-closea@2x.png" />
+    </view>
+    
+  </view>
+  <view class="list">
+    <block wx:if="{{list.length>0}}">
+      <view class="item" wx:for="{{list}}" bindtap="toListDetails" data-index="{{index}}" wx:key="index">{{item.name}}</view>
+    </block>
+    <block wx:else>
+      <view class="item">暂无数据</view>
+    </block>
+    
+  </view>
+  <view class="tab">
+    <view class="swiper-tab">
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">产品</view>
+        <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">金融</view>
+        <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">理财</view>
+    </view>
+    <view class="list" current="{{currentTab}}" data-currentTab="{{current}}" bindtap="bindChange">
+      <view  wx:for="{{tabList}}" wx:key="id">
+        <text class="item" wx:if="{{currentTab == item.idx}}">{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,94 @@
+.box {
+  width: 100%;
+  /* height: 100%; */
+  padding-top: 20rpx;
+  background-color: #f1f1f1;
+}
+
+.searchBarBox {
+  width: 650rpx;
+  height: 65rpx;
+  margin: 0 auto 20rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+  padding-left: 38rpx;
+  padding-right: 10rpx;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  justify-content: center;
+}
+
+.cancelIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.searchBar {
+  width: 600rpx;
+  margin-left: 20rpx;
+}
+
+.searchBarBox image {
+  width: 26rpx;
+  height: 26rpx;
+}
+
+.swiper-warp {
+  width: 100%;
+}
+
+.container .swiper {
+  width: 100%;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  margin: 30rpx;
+}
+.tabList {
+  flex: 1;
+  text-align: center;
+}
+.tab image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.tab .text {
+  font-size: 28rpx;
+  display: block;
+}
+.list {
+  display: flex;
+  justify-content: center;
+}
+.imgList {
+  flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.list image {
+  height: 310rpx;
+  margin: 30rpx;
+  flex: 1;
+}
+.link {
+  /* display: flex; */
+  justify-content: center;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 64rpx;
+  box-shadow: 0 2rpx 2rpx #ccc;
+  padding: 20rpx;
+}

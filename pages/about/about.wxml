@@ -1,0 +1,26 @@
+<view class="about">
+  <view class="top">
+    <view class="avatar">
+      <image class="avatarUrl" src="../../static/images/avatarUrl.png"></image>
+    </view>
+    <text class="title">预约服务</text>
+    <view class="text">为你提供最有品质的小程序</view>
+    <view class="list">
+      <text class="enter">进入小程序</text>
+      <text class="line"></text>
+      <text class="share">推荐给朋友</text>
+    </view>
+  </view>
+  <view class="applet">
+    <view class="thumb">
+      <image class="flag" src="../../static/images/dianzan.png"></image>
+      <text class="dianzan">为该小程序点赞</text>
+    </view>
+  </view>
+  <view class="foot">
+    <view class="more">
+    <text class="readmore">反馈与投诉</text>
+    <image class="img" src="{{url}}" mode="{{aspectFill}}" />
+    </view>
+  </view>
+</view>

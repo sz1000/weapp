@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="box">
+	<!-- 搜索 -->
+	<view class="searchBarBox">
+		<image class="searchIcon" mode="aspectFill" src="../../static/images/Shape@2x.png" />
+		<input class="searchBar" bindinput="getInputValue" placeholder="请输入要查询的商品" value='{{inputValue}}' />
+		<view bindtap="cancelInput"
+			style="width:50rpx;height: 100%;display: flex;justify-content: center;align-items: center;">
+			<image wx:if="{{inputValue.length != 0}}" class="cancelIcon" mode="aspectFill"
+				src="../../static/images/system-closea@2x.png" />
+		</view>
+	</view>
+
+	<!-- 轮播 -->
+	<view class="swiper-warp">
+		<swiper class="swiper" indicator-dots="{{indicatorDots}}" circular autoplay="{{autoplay}}" interval="{{interval}}"
+			duration="{{duration}}">
+			<block wx:for="{{arr}}" wx:key="*this">
+				<swiper-item>
+					<image src="{{item.url}}" data-id="{{index}}" class="{{image}}" mode="{{aspectFill}}" />
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<view class="tab">
+		<view class="tabList" wx:for="{{arr}}" wx:key="*this">
+			<image src="{{item.url}}" data-id="{{index}}" class="{{image}}" mode="{{aspectFill}}" />
+			<text class="text"> {{item.text}}</text>
+		</view>
+	</view>
+	<view class="list">
+		<view class="imgList" wx:for="{{images}}" wx:key="*this">
+			<image src="{{item.url}}" data-id="{{index}}" class="{{image}}" mode="{{aspectFill}}" />
+		</view>
+	</view>
+	<view class="link">
+		<view class="item" wx:for="{{footArr}}" bindtap="toTapPage" data-index="{{index}}" wx:key="*this">{{item.text}}
+		</view>
+	</view>
+</view>

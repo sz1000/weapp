@@ -1,0 +1,7 @@
+<view class="shopingList">
+  <view class="list" wx:for="{{shopingList}}" wx:key="id" data-id="{{item.id}}" bindtap="todetails">
+    <image class="pic" src="{{item.pic}}"/>
+    <view class="name">{{item.name}}</view>
+    <view class="minPrice">{{item.minPrice}}</view>
+  </view>
+</view>

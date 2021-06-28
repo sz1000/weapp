@@ -1,0 +1,26 @@
+<!--Tab布局-->
+<view class='title'>
+  <view class="{{0 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='0'>
+    <text>关注</text>
+    <hr class="line-style" />
+  </view>
+  <view class="{{1 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='1'>
+    <text>推荐</text>
+    <hr class="line-style" />
+  </view>
+  <view class="{{2 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='2'>
+    <text>资讯</text>
+    <hr class="line-style" />
+  </view>
+</view>
+
+<!--滑动切换 tab-->
+<view class="tabList">
+  <swiper bindchange='swiperTab' current='{{currentIndex}}' class="swiper">
+    <swiper-item wx:for="{{tabList}}" wx:key="id">
+      <scroll-view class="scroll" scroll-y wx:if="{{currentIndex == item.idx}}">
+        <view>{{item.text}}</view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>
